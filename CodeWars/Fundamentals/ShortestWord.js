@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {String} s 
+ * @returns {Number} la longitud de la(s) palabra(s) más corta(s).
+ */
 function findShort(s){
     let aux = s.split(' ');
     s = aux.map(item => String(item).length)

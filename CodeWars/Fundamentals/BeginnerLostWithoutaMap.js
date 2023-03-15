@@ -1,3 +1,7 @@
+/**
+ * @param {Array} x 
+ * @returns {Array} con todos los valores de la matris duplicados
+ */
 function maps(x){
     return x.map(function(item){
         return item+item;

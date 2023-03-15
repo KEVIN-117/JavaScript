@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {Array} haystack 
+ * @returns {String} "encontró la aguja en la posición" más el índice encontró la aguja, entonces
+ */
 function findNeedle(haystack) {
     // your code here
     for (let i=0; i < haystack.length; i++) {

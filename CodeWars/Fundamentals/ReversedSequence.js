@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {Number} n 
+ * @returns {Array} una matriz de enteros de n a 1 donde n>0.
+ */
 const reverseSeq = n => {
     let aux = []
     for (let i = n; i > 0; i--) {

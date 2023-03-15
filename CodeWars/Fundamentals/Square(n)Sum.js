@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {Array} numbers 
+ * @returns {Number} la suma de los cuadrdos de numbers
+ */
 function squareSum(numbers){
     return numbers.map(e => Math.pow(e, 2)).reduce((acum, current) => acum + current, 0);
 }

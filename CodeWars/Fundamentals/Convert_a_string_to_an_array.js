@@ -1,3 +1,8 @@
+/**
+ * @description Escriba una función para dividir una cadena y convertirla en una matriz de palabras.
+ * @param {String} string 
+ * @returns {Array} una matriz de palabras
+ */
 function stringToArray(string){
 	// code code code
     return string.split(' ')
