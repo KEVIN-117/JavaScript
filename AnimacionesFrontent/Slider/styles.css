@@ -1,0 +1,17 @@
+
+.slider{
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.slider .container{
+    white-space: nowrap;/*hace que que todo se baya uno detras de otro en vertical*/
+}
+.slider .container *{
+    white-space: normal; /*permite que todos dentro del contenedor no se veam afectados por el stilo del padre*/
+}
+.slider img{
+    width: 100%;
+    display: inline-block;
+    margin-right: -4px;
+}
