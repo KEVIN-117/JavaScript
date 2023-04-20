@@ -1,0 +1,119 @@
+
+body{
+    background: black;
+    margin: 0%;
+}
+*::-webkit-scrollbar {
+    width: 0px;
+}
+*{
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.content{
+    background:url("images/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 72px;
+    margin: 8px;
+}
+.info h2{
+    width: 90%;
+    margin: auto;
+}
+.java{
+    color: rgb(136, 0, 255);
+    text-shadow: 0px 0px 20px rgb(255, 0, 208) , 0px 0px 40px rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.script{
+    color: rgb(255, 47, 0);
+    text-shadow: 0px 0px 20px rgb(255, 0, 208), 0px 0px 40px rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.info img{
+    width: 70%;
+    margin: auto;
+    object-fit: cover;
+}
+.overflowControl{
+    overflow-x: hidden;
+}
+.container .menu-left .navLeft ul li{
+    list-style: none;
+    border-bottom: 2px red solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container .menu-left .navLeft ul{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.container .content, .container .menu-left{
+    display: inline-block;
+    color: red;
+    background-color: rgb(47, 46, 46);
+    margin-right: -4px;
+    vertical-align: top;
+    height: 100vh;
+    
+}
+
+.container{
+    white-space: nowrap;
+    position: relative;
+    left: -200px;
+    transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.container.open{
+    left: 0px;
+    transition: 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.container *{
+    white-space: normal;
+}
+
+.container .menu-left{
+    width: 200px;
+}
+.container .content{
+    overflow-y: scroll;
+    
+}
+.container .content{
+    width: 100%;
+}
+.container .resizeContainer{
+    width: 85%;
+}
+.container .content .navTop{
+    color: cyan;
+}
+
+.container .content .navTop ul{
+    display: flex;
+    align-items: center;
+}
+
+
+.container .content .navTop ul li{
+    margin-right: 20px;
+    list-style: none;
+    text-align: center;
+}
