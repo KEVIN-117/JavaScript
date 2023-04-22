@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dark-mode-controls">
+            <div class="item-ligth">
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <input type="checkbox" name="dark-toggle" id="dark-toggle" class="dark-toggle">
+            <label for="dark-toggle"></label>
+            <div class="item-dark">
+                <ion-icon name="moon-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="content">
+            <h1>iniciar sesion</h1>
+            <label for="name">Name</label>
+            <input type="text" autocomplete="none" name="name" id="name">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            
+            <input type="submit" value="ingresar">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

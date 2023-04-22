@@ -1,0 +1,124 @@
+:root{
+    --box-shadow : 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0 , 0 , 0.05);
+    --bg-color: white;
+    --main-text-color: DarkSlateGray;
+    --radius: 10px;
+    --violet-color: rgb(98, 0, 255);
+    --accent-color: Mediumblue;
+    --secondari-text-color: Ghostwhite;
+
+    --main-color:Ghostwhite;
+}
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+}
+.container{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.content{
+    border-top: 8px solid var(--violet-color);
+    background-color: var(--main-color);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    padding: 4rem 3rem;
+    width: 16rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="text"], input[type="password"]{
+    margin-bottom: 1em;
+    border: 0;
+    box-shadow: 0 0 2px;
+    padding: 0.2em 0.4em;
+    border-radius: var(--radius);
+}
+input[type="submit"]{
+    background-color: var(--accent-color);
+    padding: 10px 0px 10px 0px;
+    color: var(--secondari-text-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius);
+    text-transform: uppercase;
+}
+
+.dark-mode-controls{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dark-toggle{
+    display: none;
+}
+
+.dark-toggle + label{
+    --height-control: 1.5rem;
+    display: inline-block;
+    width: calc(var(--height-control) * 2);
+    height: var(--height-control);
+    background-color: var(--main-color);
+    position: relative;
+    border-radius: 20px;
+}
+
+.dark-toggle + label::after{
+    --simple-sixe: calc(var(--height-control) *1.33);
+    content: '';
+    width: calc((var(--height-control) * 2)/2);
+    height: var(--height-control);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dark-toggle:checked + label::after{
+    transform: translate(100%);
+}
+
+.item-ligth, .item-dark{
+    font-size: 1.5em;
+}
+.item-ligth-bg{
+    color: gold;
+}
+
+.item-dark-bg{
+    color: rgb(0, 76, 255);
+}
+@media(prefers-color-scheme: dark){/* nos permite reconocer el color por defecto del sistemas */
+    body:not(.forse-ligth){ /* mientra bosy no tyenga la clase .forse-ligth */
+        --bg-color: #0d1b1e;
+        --main-color: #0b3c49;
+        --accent-color: Purple;
+        --main-text-color: lightgoldenrodyellow;
+        --violet-color: rgb(98, 0, 255);
+        --secondari-text-color: Lavender;
+    }
+}
+
+body.forse-dark{
+    --bg-color: #0d1b1e;
+    --main-color: #0b3c49;
+    --accent-color: Purple;
+    --main-text-color: lightgoldenrodyellow;
+    --violet-color: rgb(98, 0, 255);
+    --secondari-text-color: Lavender;
+}
